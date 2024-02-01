@@ -48,19 +48,19 @@ Estas instrucciones le permitirán obtener una copia del proyecto en funcionamie
 ### Instalación
 
 Ubiquese en el directorio en donde desea descargar el repositorio
-$ git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP
+`git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP`
 
 Cambie al directorio del repositorio
-$ cd Taller-1-Aplicacion.distribuidas---AREP
+`cd Taller-1-Aplicacion.distribuidas---AREP`
 
 Compile el proyecto
-$ mvn compile
+`mvn compile`
 
 Empaquete el proyecto
-$ mvn package
+`mvn package`
 
 Inicie el servidor
-$ java -cp target\appps-distribuidas-1.0-SNAPSHOT.jar edu.escuelaing.AREP.Taller1.HttpServer
+`java -cp target\appps-distribuidas-1.0-SNAPSHOT.jar edu.escuelaing.AREP.Taller1.HttpServer`
 
 Una alternativa a la linea de comandos es realizar la ejecución desde un IDE. En este caso Visual Studio Code
 ![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/3db3884b-61d5-4a6f-a735-14e72480b78a)
