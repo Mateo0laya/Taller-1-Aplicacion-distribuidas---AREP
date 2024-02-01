@@ -52,15 +52,19 @@ Ubiquese en el directorio en donde desea descargar el repositorio
 `git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP`
 
 Cambie al directorio del repositorio
+
 `cd Taller-1-Aplicacion.distribuidas---AREP`
 
 Compile el proyecto
+
 `mvn compile`
 
 Empaquete el proyecto
+
 `mvn package`
 
 Inicie el servidor
+
 `java -cp target\appps-distribuidas-1.0-SNAPSHOT.jar edu.escuelaing.AREP.Taller1.HttpServer`
 
 Una alternativa a la linea de comandos es realizar la ejecución desde un IDE. En este caso Visual Studio Code
