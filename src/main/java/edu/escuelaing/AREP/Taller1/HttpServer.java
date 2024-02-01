@@ -124,9 +124,72 @@ public class HttpServer {
             "        <title>Movies API</title>\n" +
             "        <meta charset=\"UTF-8\">\n" +
             "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
+            "        <style>\n" +
+            "           body {\n" +
+            "               display: flex;\n" +
+            "               flex-direction: column;\n" +
+            "               align-items: center;\n" +
+            "               justify-content: center;\n" +
+            "               min-height: 100vh;\n" +
+            "               margin: 0;\n" +
+            "               background-color: #f0f8ff; /* Azul claro */\n" +
+            "               font-family: Arial, sans-serif;\n" +
+            "           }\n" +
+            "           \n" +
+            "           h1 {\n" +
+            "               color: #333;\n" +
+            "           }\n" +
+            "           \n" +
+            "           form {\n" +
+            "               margin-top: 20px;\n" +
+            "           }\n" +
+            "           \n" +
+            "           label {\n" +
+            "               display: block;\n" +
+            "               margin-bottom: 5px;\n" +
+            "               color: #333;\n" +
+            "           }\n" +
+            "           \n" +
+            "           input {\n" +
+            "               padding: 8px;\n" +
+            "               margin-bottom: 15px;\n" +
+            "               border: 1px solid #999;\n" +
+            "               border-radius: 4px;\n" +
+            "           }\n" +
+            "           \n" +
+            "           input[type=\"button\"] {\n" +
+            "               background-color: #007bff; /* Azul */\n" +
+            "               color: #fff;\n" +
+            "               cursor: pointer;\n" +
+            "           }\n" +
+            "           \n" +
+            "           div#getrespmsg {\n" +
+            "               margin-top: 20px;\n" +
+            "           }\n" +
+            "           \n" +
+            "           table {\n" +
+            "               border-collapse: collapse;\n" +
+            "               width: 100%;\n" +
+            "               margin-top: 15px;\n" +
+            "           }\n" +
+            "           \n" +
+            "           table, th, td {\n" +
+            "               border: 1px solid #ddd;\n" +
+            "           }\n" +
+            "           \n" +
+            "           th, td {\n" +
+            "               padding: 10px;\n" +
+            "               text-align: left;\n" +
+            "           }\n" +
+            "           \n" +
+            "           th {\n" +
+            "               background-color: #007bff; /* Azul */\n" +
+            "               color: #fff;\n" +
+            "           }\n" +
+            "        </style>\n" +
             "    </head>\n" +
             "    <body>\n" +
-            "        <h1>Form with GET</h1>\n" +
+            "        <h1>Movie´s API</h1>\n" +
             "        <form action=\"/hello\">\n" +
             "            <label for=\"name\">Name:</label><br>\n" +
             "            <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Movie´s Name\"><br><br>\n" +
@@ -139,7 +202,16 @@ public class HttpServer {
             "                let nameVar = document.getElementById(\"name\").value;\n" +
             "                const xhttp = new XMLHttpRequest();\n" +
             "                xhttp.onload = function() {\n" +
-            "                    document.getElementById(\"getrespmsg\").innerHTML = this.responseText;\n" +
+            "                    let response = document.getElementById(\"getrespmsg\");\n" +
+            "                    let jsonData = JSON.parse(this.responseText);\n" +
+            "                    let tableHtml = \"<table border='1'>\";\n" +
+            "                    for (let key in jsonData) {\n" +
+            "                        if (jsonData.hasOwnProperty(key)) {\n" +
+            "                            tableHtml += \"<tr><td>\" + key + \"</td><td>\" + jsonData[key] + \"</td></tr>\";\n" +
+            "                        }\n" +
+            "                    }\n" +
+            "                    tableHtml += \"</table>\";\n" +
+            "                    response.innerHTML = tableHtml;\n" +
             "                };\n" +
             "                xhttp.open(\"GET\",\"/hello?name=\"+nameVar);\n" +
             "                xhttp.send();\n" +
