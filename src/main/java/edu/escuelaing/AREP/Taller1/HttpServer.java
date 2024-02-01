@@ -207,7 +207,13 @@ public class HttpServer {
             "                    let tableHtml = \"<table border='1'>\";\n" +
             "                    for (let key in jsonData) {\n" +
             "                        if (jsonData.hasOwnProperty(key)) {\n" +
-            "                            tableHtml += \"<tr><td>\" + key + \"</td><td>\" + jsonData[key] + \"</td></tr>\";\n" +
+            "                           if(key == \"Ratings\" && Array.isArray(jsonData[key])){\n" +
+            "                               for (let i = 0; i < jsonData[key].length; i++) {\n" +
+            "                                   tableHtml += \"<tr><td>\" + jsonData[key][i].Source + \"</td><td>\" + jsonData[key][i].Value + \"</td></tr>\";\n" +
+            "                               }\n" +
+            "                            } else {\n" +
+            "                               tableHtml += \"<tr><td>\" + key + \"</td><td>\" + jsonData[key] + \"</td></tr>\";\n" +
+            "                            }\n" +
             "                        }\n" +
             "                    }\n" +
             "                    tableHtml += \"</table>\";\n" +
