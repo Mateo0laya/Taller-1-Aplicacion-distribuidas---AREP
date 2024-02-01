@@ -43,7 +43,8 @@ Estas instrucciones le permitirán obtener una copia del proyecto en funcionamie
 
 - Java 8
 - Maven
-- Git 
+- Git
+- Navegador web
 
 ### Instalación
 
@@ -70,6 +71,36 @@ Inicie el servidor
 Una alternativa a la linea de comandos es realizar la ejecución desde un IDE. En este caso Visual Studio Code
 ![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/3db3884b-61d5-4a6f-a735-14e72480b78a)
 
+## Probando la aplicación
+
+Una vez recibimos el mensaje de confirmacion (Ready to recive...) estamos listos para acceder al servidor desde un navegador como Google chrome, Mozilla, Safari, etc.
+Para lo cual debemos dirigirmos a la dirección
+http://localhost:35000/
+
+En caso de cambiar el puerto debemos reemplazar 35000 por el puerto que seleccionamos en el codigo fuente de la aplicación
+
+Una vez dentro encontraremos una interfaz muy sencilla invitandonos a introducir el nomobre de la pelicula
+![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/f355ab4a-f19b-4320-a374-fe5fb4bc2f82)
+
+Es importante que al introducir el titulo de la pelicula que deseamos buscar, realicemos la busqueda dando click en el boton "submit", de lo contrario al dar enter no mostrará el resultado correctamente
+
+A partir de aqui plantemaos dos posibles escenarios
+
+### Escenario #1: El nombre de la pelicula fue encontrado en la API
+En este caso recibiremos la información correspondiente a la pelicula que deseamos consultar.
+![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/858bea99-3c08-4db4-a9a4-8600b1682ea2)
+
+### Escenario #2: El nombre de la pelicula no fue encontrado en la API
+En este caso recibiremos un error indicandonos que la pelicula no fue encontrada
+![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/114138e5-0588-4071-8319-d13a36a7e1f9)
+
+## Pruebas unitarias
+
+Para correr las pruebas unitarias del proyecot, desde la terminal y en el directorio del proyecot ejecutamos
+'mvn test' 
+
+![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/431a3d1a-1fd6-4189-8941-854752623a22)
+De igual modo lo podremos realizar desde el entorno grafico del IDE de nuestra preferencia
 
 ## Construido con
 
