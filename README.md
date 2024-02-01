@@ -51,9 +51,12 @@ $ mvn compile
 Empaquete el proyecto
 $ mvn package
 
+Inicie el servidor
+$ java -cp target\appps-distribuidas-1.0-SNAPSHOT.jar edu.escuelaing.AREP.Taller1.HttpServer
 
+Una alternativa a la linea de comandos es realizar la ejecución desde un IDE. En este caso Visual Studio Code
+![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/3db3884b-61d5-4a6f-a735-14e72480b78a)
 
-Say what the step will be
 
 ```
 Give the example
