@@ -50,7 +50,7 @@ Estas instrucciones le permitirán obtener una copia del proyecto en funcionamie
 
 Ubiquese en el directorio en donde desea descargar el repositorio
 
-`git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP`
+`git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP.git`
 
 Cambie al directorio del repositorio
 
