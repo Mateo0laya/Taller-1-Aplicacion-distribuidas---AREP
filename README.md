@@ -1,6 +1,7 @@
 # TALLER 1: APLICACIONES DISTRIBUIDAS (HTTP, SOCKETS, HTML, JS,MAVEN, GIT)
 
 En este proyecto se creo una aplicación usando Java, la cual crea un servidor usando WebSockets para realizar la conexión cliente-servidor, esta aplicación funciona como gateway entre el cliente y el API https://www.omdbapi.com/, con la finalidad de conocer información basica de una pelicula especifica a través del titulo de la pelicula. En este proyecto se priorizo la eficiencia realizando la implementación de una memoria caché que almacena las busquedas que se realizan para asi ahorrar recursos en la consulta al API y mejorar los tiempos de respuesta.
+
 ![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/923aa8bb-5f9c-40aa-ac45-871f70cf207b)
 
 ## Arquitectura 
@@ -18,21 +19,39 @@ La arquitectura debe tener las siguientes características.
 10. Debe utilizar maven para gestionar el ciclo de vida, git y github para almacenar al código fuente y heroku como plataforma de producción.
 11. En el backend debe utilizar solo Java. No puede utilizar frameworks como SPRING.
 
-## Getting Started
+## Diseño de la aplicación
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
 
-What things you need to install the software and how to install them
+# Extensión de la aplicación
 
-```
-Give examples
-```
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
+## Guia de inicio
+
+Estas instrucciones le permitirán obtener una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y prueba. Consulte implementación para obtener notas sobre cómo implementar el proyecto en un sistema en vivo.
+
+### Prerequisitos
+
+- Java 8
+- Maven
+- Git 
+
+### Instalación
+
+Ubiquese en el directorio en donde desea descargar el repositorio
+$ git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP
+
+Cambie al directorio del repositorio
+$ cd Taller-1-Aplicacion.distribuidas---AREP
+
+Compile el proyecto
+$ mvn compile
+
+Empaquete el proyecto
+$ mvn package
+
+
 
 Say what the step will be
 
@@ -72,7 +91,7 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Contruido con
+## Construido con
 
 * [Java](https://www.java.com/es/) - The main programming language
 * [Maven](https://maven.apache.org/) - Dependency Management
