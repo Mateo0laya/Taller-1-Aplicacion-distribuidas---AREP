@@ -48,6 +48,7 @@ Estas instrucciones le permitirán obtener una copia del proyecto en funcionamie
 ### Instalación
 
 Ubiquese en el directorio en donde desea descargar el repositorio
+
 `git clone https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP`
 
 Cambie al directorio del repositorio
