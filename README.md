@@ -96,7 +96,7 @@ En este caso recibiremos un error indicandonos que la pelicula no fue encontrada
 
 ## Pruebas unitarias
 
-Para correr las pruebas unitarias del proyecot, desde la terminal y en el directorio del proyecot ejecutamos
+Para correr las pruebas unitarias del proyecto, desde la terminal y en el directorio del proyecto ejecutamos
 'mvn test' 
 
 ![image](https://github.com/Mateo0laya/Taller-1-Aplicacion-distribuidas---AREP/assets/89365336/431a3d1a-1fd6-4189-8941-854752623a22)
