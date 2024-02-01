@@ -80,7 +80,7 @@ public class HttpServer {
     
     }
 
-    private static String searchMovie(String moviesName) {
+    public static String searchMovie(String moviesName) {
         String outputLine = "";
         if(cache.containsKey(moviesName)){
             outputLine = cache.get(moviesName);
@@ -97,7 +97,7 @@ public class HttpServer {
         return outputLine;
     }
 
-    private static String htttpError() {
+    public static String htttpError() {
         String outputLine =  "HTTP/1.1 400 Not Found\r\n"
         + "Content-Type:text/html\r\n"
         + "\r\n"
